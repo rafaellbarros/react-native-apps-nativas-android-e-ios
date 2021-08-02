@@ -1,5 +1,6 @@
 import React from 'react'
 import {createDrawerNavigator} from 'react-navigation'
+import Avo from './components/ComunicacaoDireta'
 import Contador from './components/Contador'
 import Evento from './components/Evento'
 import Inverter, {MegaSena} from './components/Multi'
@@ -10,6 +11,9 @@ import ValidarProps from './components/ValidarProps'
 
 export default createDrawerNavigator(
 	{
+		Avo: {
+			screen: () => <Avo nome='João' sobrenome='Silva' />,
+		},
 		Evento: {
 			screen: Evento,
 		},
