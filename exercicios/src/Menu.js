@@ -1,6 +1,7 @@
 import React from 'react'
 import {createDrawerNavigator} from 'react-navigation'
 import Avo from './components/ComunicacaoDireta'
+import TextoSincronizado from './components/ComunicacaoIndireta'
 import Contador from './components/Contador'
 import Evento from './components/Evento'
 import Inverter, {MegaSena} from './components/Multi'
@@ -11,6 +12,10 @@ import ValidarProps from './components/ValidarProps'
 
 export default createDrawerNavigator(
 	{
+		TextoSincronizado: {
+			screen: TextoSincronizado,
+			navigationOptions: {title: 'Texto Sincronizado'},
+		},
 		Avo: {
 			screen: () => <Avo nome='João' sobrenome='Silva' />,
 		},
