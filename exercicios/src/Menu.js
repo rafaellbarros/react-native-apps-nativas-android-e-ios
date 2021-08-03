@@ -4,6 +4,7 @@ import Avo from './components/ComunicacaoDireta'
 import TextoSincronizado from './components/ComunicacaoIndireta'
 import Contador from './components/Contador'
 import Evento from './components/Evento'
+import Flex from './components/Flex'
 import ListaFlex from './components/ListaFlex'
 import Inverter, {MegaSena} from './components/Multi'
 import ParImpar from './components/ParImpar'
@@ -13,6 +14,9 @@ import ValidarProps from './components/ValidarProps'
 
 export default createDrawerNavigator(
 	{
+		Flex: {
+			screen: Flex,
+		},
 		ListaFlex: {
 			screen: ListaFlex,
 			navigationOptions: {title: 'Lista (Flex Box)'},
